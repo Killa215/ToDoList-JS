@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добавление поста</title>
+</head>
+<body>
+  <form id="post-form">
+    <label for="title">Заголовок</label>
+    <input 
+      id="title" 
+      name="title" 
+      placeholder="Пост 1" 
+      required
+    >
+    <label for="body">Текст поста</label>
+    <textarea 
+      id="body" 
+      name="body" 
+      placeholder="Это твой новый пост и ..." 
+      required
+    ></textarea>
+    <p id="error-message"></p>
+    <button type="submit">Создать</button>
+  </form>
+  <ul id="posts-list"></ul>
+  <script src="form.js"></script>
+</body>
+</html>
