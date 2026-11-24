@@ -1,7 +1,7 @@
 const form = document.querySelector('#post-form')
 const title = document.querySelector('#title')
 const body = document.querySelector('#body')
-const errorMassage = document.querySelector('#error-message')
+const errorMessage = document.querySelector('#error-message')
 const postsList = document.querySelector('#posts-list')
 let editingPost = null
 
@@ -12,9 +12,9 @@ form.addEventListener('submit', (event) =>{
   const titleValue = title.value
   const bodyValue = body.value
 
-  errorMassage.textContent = ''
+  errorMessage.textContent = ''
   if(titleValue.trim() === '' || bodyValue.trim() === ''){
-    errorMassage.textContent = 'Заполните все поля'
+    errorMessage.textContent = 'Заполните все поля'
     return
   }
 
@@ -31,7 +31,7 @@ form.addEventListener('submit', (event) =>{
   })
 
   if(hasDuplicate){
-    errorMassage.textContent = 'Пост с таким именем или такстом уже создан'
+    errorMessage.textContent = 'Пост с таким именем или такстом уже создан'
     return
   }
 

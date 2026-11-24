@@ -1,13 +1,16 @@
 {
-  "name": "api",
+  "name": "todolist-js",
   "version": "1.0.0",
-  "description": "",
+  "description": "Todo List application",
   "main": "api-practice.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "todo-list"
+  ],
+  "author": "Killa215",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
