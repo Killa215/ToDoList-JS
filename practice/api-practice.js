@@ -10,7 +10,7 @@ async function getPosts(){
       throw new Error('Некоректные данные')
     }
     if (data.length === 0) {
-      statusSerever.textContent = "Постов пока нет"
+      statusServer.textContent = "Постов пока нет"
       return
     }
     const isValid = data.every((post) =>{
@@ -23,7 +23,7 @@ async function getPosts(){
     if (!isValid) {
       throw new Error(`Некорректная структура постов`)
     }
-    statusSerever.textContent = ""
+    statusServer.textContent = ""
     data.slice(0, 3).forEach((post) => {
       const li = document.createElement('li')
       const title = document.createElement('h2')
@@ -36,7 +36,7 @@ async function getPosts(){
     });
     
   } catch (error) {
-    statusSerever.textContent = "Не удалось загрузить посты"
+    statusServer.textContent = "Не удалось загрузить посты"
   }
 } 
 
