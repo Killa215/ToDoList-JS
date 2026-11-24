@@ -1,5 +1,5 @@
 import {describe, it, expect} from "vitest"
-import {isValidTitle} from "./isValiTitle.js"
+import {isValidTitle} from "./isValidTitle.js"
 
 describe("isValidTitle", ()=>{
   it('должна принимать обычную строку', ()=>{

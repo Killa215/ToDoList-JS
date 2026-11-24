@@ -1,5 +1,5 @@
 const postsList = document.querySelector('#posts-list')
-const statusSerever = document.querySelector('#status')
+const statusServer = document.querySelector('#status')
 
 async function getPosts(){
   try {

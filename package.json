@@ -2,7 +2,6 @@
   "name": "todolist-js",
   "version": "1.0.0",
   "description": "Todo List application",
-  "main": "api-practice.js",
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest"
