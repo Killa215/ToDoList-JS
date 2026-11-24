@@ -31,7 +31,7 @@ form.addEventListener('submit', (event) =>{
   })
 
   if(hasDuplicate){
-    errorMessage.textContent = 'Пост с таким именем или такстом уже создан'
+    errorMessage.textContent = 'Пост с таким именем или текстом уже создан'
     return
   }
 
