@@ -7,7 +7,7 @@ async function getPosts(){
     if (!response.ok)throw new Error(`Ошибка: ${response.status}`)
     const data = await response.json()
     if (!Array.isArray(data)) {
-      throw new Error('Некоректные данные')
+      throw new Error('Некорректные данные')
     }
     if (data.length === 0) {
       statusServer.textContent = "Постов пока нет"
